@@ -83,7 +83,7 @@ public class ProcessInput : MonoBehaviour
         {
             if (_ball.linearVelocity.magnitude <= _minVelocity)
             {
-                
+                _failMenu.SetActive(true);
             }
         }
 
