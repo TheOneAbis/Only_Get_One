@@ -25,7 +25,7 @@ public class ProcessInput : MonoBehaviour
 
     [SerializeField]
     float _minVelocity = 0.1f;
-    bool _shotTaken = false;
+    public bool ShotTaken = false;
 
 
 
@@ -51,7 +51,7 @@ public class ProcessInput : MonoBehaviour
         string buttonState = charge ? "Pressed" : "Released";
         Debug.Log("Left Click " + buttonState);
         charge = input.isPressed;
-        if (_shotTaken)
+        if (ShotTaken)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
@@ -60,9 +60,9 @@ public class ProcessInput : MonoBehaviour
 
     private void Update()
     {
-        if (_shotTaken == false)
+        if (ShotTaken == false)
         {
-
+            _failMenu.SetActive(false);
 
             if (charge)
             {
@@ -74,7 +74,7 @@ public class ProcessInput : MonoBehaviour
                 if (chargeTime > minCharge)
                 {
                     _ball.AddForce(Camera.main.transform.forward * chargeTime * launchForce, ForceMode.Impulse);
-                    _shotTaken = true;
+                    ShotTaken = true;
                 }
                 chargeTime = 0;
             }
