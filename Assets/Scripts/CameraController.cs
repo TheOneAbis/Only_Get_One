@@ -27,7 +27,11 @@ public class CameraController : MonoBehaviour
         Vector3 cameraTarget = CameraTarget.transform.position + Vector3.up *yPivotOffset;
         Quaternion direction = Quaternion.Euler(xRotation, yRotation, 0);
         Vector3 offset = direction * Vector3.forward * offsetDistance ;
-        
+        if (Physics.Raycast(cameraTarget, offset, out RaycastHit hit, Mathf.Abs(offsetDistance), LayerMask.GetMask("Default")))
+        { 
+            offset = direction * Vector3.forward * (-hit.distance+0.1f);
+            Debug.Log("Cameracollision");
+        }
         Camera.main.transform.position = cameraTarget + offset;
         Camera.main.transform.rotation = direction;
 
