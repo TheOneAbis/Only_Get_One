@@ -1190,6 +1190,9 @@ MonoBehaviour:
   ShotTaken: 0
   _forceArrow: {fileID: 167692977725565822}
   _arrowMaxScale: {x: 1, y: 1, z: 2}
+  startingFOV: 60
+  endFOV: 50
+  speedFOV: 85
 --- !u!1001 &153304958127226021
 PrefabInstance:
   m_ObjectHideFlags: 0
