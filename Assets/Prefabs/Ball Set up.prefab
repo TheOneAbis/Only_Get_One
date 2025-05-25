@@ -702,7 +702,7 @@ MonoBehaviour:
   _pauseMenu: {fileID: 0}
   _failMenu: {fileID: 0}
   _cameraController: {fileID: 3460596292174010337}
-  _ball: {fileID: 1095465569662587030}
+  Ball: {fileID: 1095465569662587030}
   launchForce: 20
   _minVelocity: 0.1
   ShotTaken: 0

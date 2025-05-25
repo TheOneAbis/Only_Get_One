@@ -14,7 +14,7 @@ public class ProcessInput : MonoBehaviour
     [SerializeField]
     private CameraController _cameraController;
     [SerializeField]
-    private Rigidbody _ball;
+    public Rigidbody Ball;
 
 
 
@@ -79,12 +79,12 @@ public class ProcessInput : MonoBehaviour
             _failMenu.SetActive(false);
 
             Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward *
-            (Mathf.Abs(_cameraController.GetComponent<CameraController>().offsetDistance) * 2.25f) - _ball.transform.position).normalized;
+            (Mathf.Abs(_cameraController.GetComponent<CameraController>().offsetDistance) * 2.25f) - Ball.transform.position).normalized;
 
             if (charge)
             {
                 _forceArrow.SetActive(true);
-                _forceArrow.transform.position = _ball.transform.position+ Vector3.up*0.5f;
+                _forceArrow.transform.position = Ball.transform.position+ Vector3.up*0.5f;
                 _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
                 _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
                 chargeTime += Time.deltaTime * chargeMult;
@@ -98,7 +98,8 @@ public class ProcessInput : MonoBehaviour
 
                     ChargeRelease.Invoke();
 
-                    _ball.AddForce(dir * chargeTime * launchForce, ForceMode.Impulse);
+                    Ball.isKinematic = false;
+                    Ball.AddForce(dir * chargeTime * launchForce, ForceMode.Impulse);
                     ShotTaken = true;
                 }
                 chargeTime = 0;
@@ -106,7 +107,7 @@ public class ProcessInput : MonoBehaviour
         }
         else
         {
-            if (_ball.linearVelocity.magnitude <= _minVelocity)
+            if (Ball.linearVelocity.magnitude <= _minVelocity)
             {
                 _failMenu.SetActive(true);
             }
