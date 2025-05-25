@@ -21887,18 +21887,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Set up
       objectReference: {fileID: 0}
-    - target: {fileID: 7970651386327643865, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -79.82
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970651386327643865, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -20.19
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970651386327643865, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -17.67
-      objectReference: {fileID: 0}
     - target: {fileID: 8231191852137784560, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1107.4259
@@ -21947,10 +21935,6 @@ PrefabInstance:
       propertyPath: _pauseMenu
       value: 
       objectReference: {fileID: 1571782541}
-    - target: {fileID: 8860990051566069521, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: launchForce
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
