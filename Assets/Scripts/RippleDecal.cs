@@ -6,12 +6,12 @@ public class RippleDecal : MonoBehaviour
     public GameObject ball;
     void Start()
     {
-        transform.position = ball.transform.position - new Vector3(0, 0.5f, 0);
+        transform.position = ball.transform.position - new Vector3(0, 0.9f, 0);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = ball.transform.position - new Vector3(0, 0.5f, 0);
+        transform.position = ball.transform.position - new Vector3(0, 0.9f, 0);
     }
 }
