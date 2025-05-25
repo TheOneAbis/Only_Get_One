@@ -20,6 +20,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level_Jared.unity
     guid: ac84d76fdcd342448903dcea12ac9d1c
+  - enabled: 1
+    path: Assets/Scenes/Score.unity
+    guid: a09e566f0c9c88c4089c8461b1d62075
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 052faaac586de48259a63d0c4782560b, type: 3}
   m_UseUCBPForAssetBundles: 0
