@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6763462676720250290}
   - component: {fileID: 2178199907222785107}
   m_Layer: 0
-  m_Name: Goal Trigger
+  m_Name: Launcher
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
