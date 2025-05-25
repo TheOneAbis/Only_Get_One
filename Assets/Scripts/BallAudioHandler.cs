@@ -4,18 +4,47 @@ public class BallAudio : MonoBehaviour
 {
     AudioSource rollAudio;
     AudioSource bounceAudio;
+    AudioSource chargeAudio;
     Rigidbody rb;
+
     Vector3 velocity;
     int colliders = 0;
+    float chargeTmr = -1;
+    float chargeMult = 1;
 
     public AudioClip[] bounceClips;
+    public AudioClip puntClip, chargeClip;
 
     void Start()
     {
         AudioSource[] audios = GetComponents<AudioSource>();
         rollAudio = audios[0];
         bounceAudio = audios[1];
+        chargeAudio = audios[2];
         rb = GetComponent<Rigidbody>();
+
+        ProcessInput.onChargeBegin.AddListener((chargeMultiplier) =>
+            {
+                chargeTmr = 1;
+                chargeMult = chargeMultiplier;
+
+                chargeAudio.clip = chargeClip;
+                chargeAudio.volume = 0;
+                chargeAudio.pitch = 1;
+                chargeAudio.loop = true;
+                chargeAudio.Play();
+            });
+        ProcessInput.onChargeRelease.AddListener(() =>
+            {
+                chargeTmr = 0;
+
+                chargeAudio.clip = puntClip;
+                chargeAudio.volume = 1;
+                chargeAudio.pitch = 1;
+                chargeAudio.loop = false;
+                chargeAudio.Play();
+            });
+        ProcessInput.onChargeCancelled.AddListener(() => chargeAudio.Stop());
     }
 
     void Update()
@@ -23,6 +52,13 @@ public class BallAudio : MonoBehaviour
         // update rolling volume based on velocity
         velocity = rb.linearVelocity;
         rollAudio.volume = colliders > 0 ? Mathf.Min(velocity.magnitude / 10f, 1.5f) : 0f;
+
+        if (chargeTmr > 0)
+        {
+            chargeAudio.volume = Mathf.Lerp(0.5f, 0f, chargeTmr);
+            chargeAudio.pitch = Mathf.Lerp(1.5f, 1f, chargeTmr);
+            chargeTmr -= Time.deltaTime * chargeMult;
+        }
     }
 
     private void OnCollisionEnter(Collision collision)
