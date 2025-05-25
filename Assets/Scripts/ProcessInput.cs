@@ -39,6 +39,10 @@ public class ProcessInput : MonoBehaviour
     public static UnityEvent<float> onChargeBegin = new();
     public static UnityEvent onChargeCancelled = new();
     public static UnityEvent onChargeRelease = new();
+
+    public float startingFOV = 60;
+    public float endFOV= 40;
+    public float speedFOV = 90;
     private void OnEnable()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -116,6 +120,7 @@ public class ProcessInput : MonoBehaviour
                 _forceArrow.transform.position = Ball.transform.position+ Vector3.up*0.5f;
                 _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
                 _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
+                Camera.main.fieldOfView = Mathf.Lerp(startingFOV, endFOV, chargeTime);
                 if(chargeup)
                     chargeTime += Time.deltaTime * chargeMult;
                 else
@@ -153,6 +158,10 @@ public class ProcessInput : MonoBehaviour
         }
         else
         {
+            float speed = Ball.linearVelocity.magnitude;
+            float maxSpeed = 20;
+            
+            Camera.main.fieldOfView = Mathf.Lerp(startingFOV, speedFOV, speed / maxSpeed);
             if (Ball.linearVelocity.magnitude <= _minVelocity&& Time.time - launchTime>3.0f)
             {
                 _failMenu.SetActive(true);
