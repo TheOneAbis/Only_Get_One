@@ -6,6 +6,12 @@ public class Collectable : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Data.Points++;
-        Destroy(gameObject);
+
+        GetComponent<AudioSource>().Play();
+
+        GetComponent<SphereCollider>().enabled = false;
+        transform.GetChild(0).gameObject.SetActive(false);
+
+        Destroy(gameObject, 1f);
     }
 }
