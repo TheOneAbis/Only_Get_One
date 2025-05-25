@@ -34,10 +34,9 @@ public class ProcessInput : MonoBehaviour
     [SerializeField]
     private Vector3 _arrowMaxScale = new Vector3(1,1,2);
 
-    [SerializeField]
-    UnityEvent ChargeBegin;
-    [SerializeField]
-    UnityEvent ChargeRelease;
+    public static UnityEvent<float> onChargeBegin = new();
+    public static UnityEvent onChargeCancelled = new();
+    public static UnityEvent onChargeRelease = new();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void OnPause(InputValue input)
@@ -50,20 +49,22 @@ public class ProcessInput : MonoBehaviour
     }
     public void OnLook(InputValue input)
     {
-        Vector2 mouseInput = input.Get<Vector2>();
+        Vector2 mouseInput = input.Get<Vector2>() / 4f;
         //Debug.Log("Mouse move input: "+ mouseInput);
         _cameraController.UpdatePosition(mouseInput);
     }
 
     public void OnLeftClick(InputValue input)
     {
+        if (!charge && input.isPressed)
+        {
+            onChargeBegin?.Invoke(chargeMult);
+        }
+
         charge = input.isPressed;
         string buttonState = charge ? "Pressed" : "Released";
         Debug.Log("Left Click " + buttonState);
-        if (!charge&& input.isPressed)
-        {
-            ChargeBegin.Invoke();
-        }
+       
         charge = input.isPressed;
         if (ShotTaken)
         {
@@ -96,13 +97,14 @@ public class ProcessInput : MonoBehaviour
                 if (chargeTime > minCharge)
                 {
 
-                    ChargeRelease.Invoke();
+                    onChargeRelease?.Invoke();
 
                     Ball.isKinematic = false;
                     Ball.AddForce(dir * chargeTime * launchForce, ForceMode.Impulse);
                     ShotTaken = true;
                 }
-                chargeTime = 0;
+                else onChargeCancelled?.Invoke();
+                    chargeTime = 0;
             }
         }
         else
