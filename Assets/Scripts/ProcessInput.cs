@@ -16,8 +16,6 @@ public class ProcessInput : MonoBehaviour
     [SerializeField]
     public Rigidbody Ball;
 
-
-
     bool charge;
     float chargeMult = 0.5f;
     float minCharge = 0.1f;
@@ -25,6 +23,7 @@ public class ProcessInput : MonoBehaviour
 
     [SerializeField]
     float launchForce;
+    float launchTime;
 
     [SerializeField]
     float _minVelocity = 0.1f;
@@ -105,7 +104,7 @@ public class ProcessInput : MonoBehaviour
                 _forceArrow.SetActive(false);
                 if (chargeTime > minCharge)
                 {
-
+                    launchTime = Time.time;
                     onChargeRelease?.Invoke();
 
                     Ball.isKinematic = false;
@@ -119,7 +118,7 @@ public class ProcessInput : MonoBehaviour
         }
         else
         {
-            if (Ball.linearVelocity.magnitude <= _minVelocity)
+            if (Ball.linearVelocity.magnitude <= _minVelocity&& Time.time - launchTime>3.0f)
             {
                 _failMenu.SetActive(true);
             }
