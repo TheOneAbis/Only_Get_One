@@ -1391,7 +1391,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 1653035632}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
       propertyPath: m_LocalScale.x
@@ -1403,19 +1403,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
       propertyPath: m_LocalScale.z
-      value: 7100
+      value: 7100.0005
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1145.7584
+      value: 27.348389
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 511.93216
+      value: -38.28781
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -224.40593
+      value: -200.92593
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1466,6 +1466,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
+--- !u!4 &898469493 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: abe0c7ea41483f34f8773eb32ea39832, type: 3}
+  m_PrefabInstance: {fileID: 898469492}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &970432766
 GameObject:
   m_ObjectHideFlags: 0
@@ -2357,6 +2362,7 @@ Transform:
   - {fileID: 1420685564}
   - {fileID: 805200960}
   - {fileID: 340228424}
+  - {fileID: 898469493}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1810748688
@@ -2822,4 +2828,3 @@ SceneRoots:
   - {fileID: 1846034912}
   - {fileID: 970432770}
   - {fileID: 1653035632}
-  - {fileID: 898469492}
