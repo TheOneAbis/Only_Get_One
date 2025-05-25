@@ -22672,10 +22672,6 @@ PrefabInstance:
       propertyPath: _pauseMenu
       value: 
       objectReference: {fileID: 1571782541}
-    - target: {fileID: 8860990051566069521, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: launchForce
-      value: 40
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

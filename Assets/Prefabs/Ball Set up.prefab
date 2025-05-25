@@ -874,7 +874,7 @@ MonoBehaviour:
   _failMenu: {fileID: 0}
   _cameraController: {fileID: 3460596292174010337}
   Ball: {fileID: 1095465569662587030}
-  launchForce: 40
+  launchForce: 20
   _minVelocity: 0.1
   ShotTaken: 0
   _forceArrow: {fileID: 167692977725565822}
