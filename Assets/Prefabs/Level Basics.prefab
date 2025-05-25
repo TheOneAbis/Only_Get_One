@@ -1004,6 +1004,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 8231191852137784560}
     m_Modifications:
+    - target: {fileID: 1771354412689217133, guid: 69a4380ec9581794b9009d1a443ba0ae, type: 3}
+      propertyPath: _endScene
+      value: Score
+      objectReference: {fileID: 0}
     - target: {fileID: 4980658028946917228, guid: 69a4380ec9581794b9009d1a443ba0ae, type: 3}
       propertyPath: m_Name
       value: Game Complete
