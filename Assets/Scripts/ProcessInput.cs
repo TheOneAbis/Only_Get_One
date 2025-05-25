@@ -2,6 +2,7 @@ using JetBrains.Annotations;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
 using UnityEngine.Windows;
 
@@ -15,6 +16,7 @@ public class ProcessInput : MonoBehaviour
     private CameraController _cameraController;
     [SerializeField]
     public Rigidbody Ball;
+    public DecalProjector Ripple;
 
     bool charge;
     float chargeMult = 0.5f;
@@ -38,6 +40,12 @@ public class ProcessInput : MonoBehaviour
     public static UnityEvent onChargeRelease = new();
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+
+    void Start()
+    {
+        Ripple.transform.position = Ball.transform.position - new Vector3(0, 0.9f, 0);
+        Ripple.gameObject.SetActive(false);
+    }
     public void OnPause(InputValue input)
     {
         _pauseMenu.SetActive(!_pauseMenu.activeSelf);
@@ -83,6 +91,7 @@ public class ProcessInput : MonoBehaviour
 
     private void Update()
     {
+        Ripple.transform.position = Ball.transform.position - new Vector3(0, 0.9f, 0);
         if (ShotTaken == false)
         {
             _failMenu.SetActive(false);
@@ -115,6 +124,7 @@ public class ProcessInput : MonoBehaviour
 
                 chargeTime = 0;
             }
+            Ripple.gameObject.SetActive(false);
         }
         else
         {
@@ -122,8 +132,14 @@ public class ProcessInput : MonoBehaviour
             {
                 _failMenu.SetActive(true);
             }
+            if (Ball.GetComponent<Rigidbody>().linearVelocity.sqrMagnitude > 0.1)
+            {
+                Ripple.gameObject.SetActive(false);
+            }
+            else
+            {
+                Ripple.gameObject.SetActive(true);
+            }
         }
-
-
     }
 }
