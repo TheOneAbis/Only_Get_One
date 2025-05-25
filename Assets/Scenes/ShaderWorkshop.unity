@@ -11067,6 +11067,10 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 3a812ed4f27704848ab1024d1282772d, type: 3}
+      propertyPath: 'm_Materials.Array.data[1]'
+      value: 
+      objectReference: {fileID: 2100000, guid: b4ba347240e8eeb4f8b31d8faa1ac1c8, type: 2}
     - target: {fileID: 919132149155446097, guid: 3a812ed4f27704848ab1024d1282772d, type: 3}
       propertyPath: m_Name
       value: Solid_Wall
