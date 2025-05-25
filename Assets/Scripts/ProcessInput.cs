@@ -1,7 +1,10 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows;
+
 public class ProcessInput : MonoBehaviour
 {
     [SerializeField]
@@ -26,8 +29,15 @@ public class ProcessInput : MonoBehaviour
     [SerializeField]
     float _minVelocity = 0.1f;
     public bool ShotTaken = false;
+    [SerializeField]
+    private GameObject _forceArrow;
+    [SerializeField]
+    private Vector3 _arrowMaxScale = new Vector3(1,1,2);
 
-
+    [SerializeField]
+    UnityEvent ChargeBegin;
+    [SerializeField]
+    UnityEvent ChargeRelease;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public void OnPause(InputValue input)
@@ -50,6 +60,10 @@ public class ProcessInput : MonoBehaviour
         charge = input.isPressed;
         string buttonState = charge ? "Pressed" : "Released";
         Debug.Log("Left Click " + buttonState);
+        if (!charge&& input.isPressed)
+        {
+            ChargeBegin.Invoke();
+        }
         charge = input.isPressed;
         if (ShotTaken)
         {
@@ -64,16 +78,26 @@ public class ProcessInput : MonoBehaviour
         {
             _failMenu.SetActive(false);
 
+            Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward *
+            (Mathf.Abs(_cameraController.GetComponent<CameraController>().offsetDistance) * 2.25f) - _ball.transform.position).normalized;
+
             if (charge)
             {
+                _forceArrow.SetActive(true);
+                _forceArrow.transform.position = _ball.transform.position+ Vector3.up*0.5f;
+                _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
+                _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
                 chargeTime += Time.deltaTime * chargeMult;
                 chargeTime = Mathf.Min(chargeTime, 1);
             }
             else
             {
+                _forceArrow.SetActive(false);
                 if (chargeTime > minCharge)
                 {
-                    Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward * 9.5f - _ball.transform.position).normalized;
+
+                    ChargeRelease.Invoke();
+
                     _ball.AddForce(dir * chargeTime * launchForce, ForceMode.Impulse);
                     ShotTaken = true;
                 }

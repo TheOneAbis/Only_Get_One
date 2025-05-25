@@ -10,7 +10,7 @@ public class CameraController : MonoBehaviour
     [SerializeField]
     float yPivotOffset;
     [SerializeField]
-    float offsetDistance;
+    public float offsetDistance;
     [SerializeField]
     float maxXRotation = 90;
     [SerializeField]

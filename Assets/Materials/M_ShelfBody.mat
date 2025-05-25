@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_Red
+  m_Name: M_ShelfBody
   m_Shader: {fileID: -6465566751694194690, guid: 3f640e10f28ee8e489f2bf4bae8dd0a8, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -60,6 +60,6 @@ Material:
     - _QueueOffset: 0
     - _ShadowBrightness: 0.2
     m_Colors:
-    - _Color: {r: 0.8509804, g: 0.09009329, b: 0.039215706, a: 1}
+    - _Color: {r: 0.8509804, g: 0.47774753, b: 0.039215706, a: 1}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
