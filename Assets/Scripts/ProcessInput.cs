@@ -41,7 +41,7 @@ public class ProcessInput : MonoBehaviour
     public void OnLook(InputValue input)
     {
         Vector2 mouseInput = input.Get<Vector2>();
-        Debug.Log("Mouse move input: "+ mouseInput);
+        //Debug.Log("Mouse move input: "+ mouseInput);
         _cameraController.UpdatePosition(mouseInput);
     }
 
