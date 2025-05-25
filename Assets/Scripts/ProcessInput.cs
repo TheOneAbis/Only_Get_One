@@ -72,6 +72,15 @@ public class ProcessInput : MonoBehaviour
         }
     }
 
+    public void OnRightClick(InputValue input)
+    {
+        if (charge && input.isPressed)
+        {
+            charge = false;
+            onChargeCancelled?.Invoke();
+            chargeTime = 0;
+        }
+    }
 
     private void Update()
     {
@@ -104,7 +113,8 @@ public class ProcessInput : MonoBehaviour
                     ShotTaken = true;
                 }
                 else onChargeCancelled?.Invoke();
-                    chargeTime = 0;
+
+                chargeTime = 0;
             }
         }
         else
