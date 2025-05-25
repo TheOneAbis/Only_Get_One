@@ -122,8 +122,8 @@ Rigidbody:
   m_GameObject: {fileID: 887178631529850918}
   serializedVersion: 5
   m_Mass: 1
-  m_LinearDamping: 0.5
-  m_AngularDamping: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0
   m_CenterOfMass: {x: 0, y: 0, z: 0}
   m_InertiaTensor: {x: 1, y: 1, z: 1}
   m_InertiaRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -802,7 +802,7 @@ MonoBehaviour:
   _pauseMenu: {fileID: 0}
   _failMenu: {fileID: 0}
   _cameraController: {fileID: 3460596292174010337}
-  _ball: {fileID: 1095465569662587030}
+  Ball: {fileID: 0}
   launchForce: 50
   _minVelocity: 0.1
   ShotTaken: 0
