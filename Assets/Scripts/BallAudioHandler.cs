@@ -9,8 +9,6 @@ public class BallAudio : MonoBehaviour
 
     Vector3 velocity;
     int colliders = 0;
-    float chargeTmr = -1;
-    float chargeMult = 1;
 
     public AudioClip[] bounceClips;
     public AudioClip puntClip, chargeClip;
@@ -25,19 +23,19 @@ public class BallAudio : MonoBehaviour
 
         ProcessInput.onChargeBegin.AddListener((chargeMultiplier) =>
             {
-                chargeTmr = 1;
-                chargeMult = chargeMultiplier;
-
                 chargeAudio.clip = chargeClip;
                 chargeAudio.volume = 0;
                 chargeAudio.pitch = 1;
                 chargeAudio.loop = true;
                 chargeAudio.Play();
             });
+        ProcessInput.onChargeUpdated.AddListener((chargeTime) =>
+        {
+            chargeAudio.volume = Mathf.Lerp(0f, 0.5f, chargeTime);
+            chargeAudio.pitch = Mathf.Lerp(1f, 1.5f, chargeTime);
+        });
         ProcessInput.onChargeRelease.AddListener(() =>
             {
-                chargeTmr = 0;
-
                 chargeAudio.clip = puntClip;
                 chargeAudio.volume = 1;
                 chargeAudio.pitch = 1;
@@ -52,13 +50,6 @@ public class BallAudio : MonoBehaviour
         // update rolling volume based on velocity
         velocity = rb.linearVelocity;
         rollAudio.volume = colliders > 0 ? Mathf.Min(velocity.magnitude / 10f, 1.5f) : 0f;
-
-        if (chargeTmr > 0)
-        {
-            chargeAudio.volume = Mathf.Lerp(0.5f, 0f, chargeTmr);
-            chargeAudio.pitch = Mathf.Lerp(1.5f, 1f, chargeTmr);
-            chargeTmr -= Time.deltaTime * chargeMult;
-        }
     }
 
     private void OnCollisionEnter(Collision collision)
