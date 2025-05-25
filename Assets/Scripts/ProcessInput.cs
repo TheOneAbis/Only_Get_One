@@ -41,7 +41,7 @@ public class ProcessInput : MonoBehaviour
     public void OnLook(InputValue input)
     {
         Vector2 mouseInput = input.Get<Vector2>();
-        Debug.Log("Mouse move input: "+ mouseInput);
+        //Debug.Log("Mouse move input: "+ mouseInput);
         _cameraController.UpdatePosition(mouseInput);
     }
 
@@ -73,7 +73,8 @@ public class ProcessInput : MonoBehaviour
             {
                 if (chargeTime > minCharge)
                 {
-                    _ball.AddForce(Camera.main.transform.forward * chargeTime * launchForce, ForceMode.Impulse);
+                    Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward * 9.5f - _ball.transform.position).normalized;
+                    _ball.AddForce(dir * chargeTime * launchForce, ForceMode.Impulse);
                     ShotTaken = true;
                 }
                 chargeTime = 0;
