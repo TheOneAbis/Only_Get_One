@@ -27,6 +27,7 @@ public class Launcher : MonoBehaviour
             _processInput.Ball.isKinematic = true;
             _processInput.Ball.transform.position = transform.position;
             _activeOnce = true;
+            Data.Goals.Add(name);
         }
     }
 }
