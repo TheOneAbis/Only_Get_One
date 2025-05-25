@@ -73,7 +73,8 @@ public class ProcessInput : MonoBehaviour
             {
                 if (chargeTime > minCharge)
                 {
-                    Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward * 9.5f - _ball.transform.position).normalized;
+                    Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward * 
+                        (Mathf.Abs(_cameraController.GetComponent<CameraController>().offsetDistance) * 2.25f) - _ball.transform.position).normalized;
                     _ball.AddForce(dir * chargeTime * launchForce, ForceMode.Impulse);
                     ShotTaken = true;
                 }
