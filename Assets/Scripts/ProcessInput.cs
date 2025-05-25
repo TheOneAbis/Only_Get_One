@@ -41,7 +41,7 @@ public class ProcessInput : MonoBehaviour
     public static UnityEvent onChargeRelease = new();
 
     public float startingFOV = 60;
-    public float endFOV= 40;
+    public float endFOV= 50;
     public float speedFOV = 90;
     private void OnEnable()
     {
@@ -103,9 +103,10 @@ public class ProcessInput : MonoBehaviour
             chargeTime = 0;
         }
     }
-
+    float fovVel;
     private void Update()
     {
+        float targetFov = 60;
         Ripple.transform.position = Ball.transform.position - new Vector3(0, 0.9f, 0);
         if (ShotTaken == false)
         {
@@ -120,7 +121,7 @@ public class ProcessInput : MonoBehaviour
                 _forceArrow.transform.position = Ball.transform.position+ Vector3.up*0.5f;
                 _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
                 _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
-                Camera.main.fieldOfView = Mathf.Lerp(startingFOV, endFOV, chargeTime);
+                targetFov= Mathf.Lerp(startingFOV, endFOV, chargeTime);
                 if(chargeup)
                     chargeTime += Time.deltaTime * chargeMult;
                 else
@@ -161,7 +162,7 @@ public class ProcessInput : MonoBehaviour
             float speed = Ball.linearVelocity.magnitude;
             float maxSpeed = 20;
             
-            Camera.main.fieldOfView = Mathf.Lerp(startingFOV, speedFOV, speed / maxSpeed);
+            targetFov = Mathf.Lerp(startingFOV, speedFOV, speed / maxSpeed);
             if (Ball.linearVelocity.magnitude <= _minVelocity&& Time.time - launchTime>3.0f)
             {
                 _failMenu.SetActive(true);
@@ -175,5 +176,8 @@ public class ProcessInput : MonoBehaviour
                 Ripple.gameObject.SetActive(true);
             }
         }
+
+        Camera.main.fieldOfView = Mathf.SmoothDamp(Camera.main.fieldOfView, targetFov, ref fovVel, 0.2f);
     }
+    
 }
