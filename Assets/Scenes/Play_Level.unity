@@ -21887,6 +21887,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ball Set up
       objectReference: {fileID: 0}
+    - target: {fileID: 3364718021989769494, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_FadeFactor
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8231191852137784560, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1107.4259
