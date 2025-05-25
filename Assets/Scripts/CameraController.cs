@@ -30,7 +30,7 @@ public class CameraController : MonoBehaviour
         if (Physics.Raycast(cameraTarget, offset, out RaycastHit hit, Mathf.Abs(offsetDistance), LayerMask.GetMask("Default")))
         { 
             offset = direction * Vector3.forward * (-hit.distance+0.1f);
-            Debug.Log("Cameracollision");
+            //Debug.Log("Cameracollision");
         }
         Camera.main.transform.position = cameraTarget + offset;
         Camera.main.transform.rotation = direction;
