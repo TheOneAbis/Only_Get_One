@@ -179,6 +179,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: -7.0140076
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: 68db1d9b45c7639459468192562b70ac, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 8d8f86febb06ee84a91371510b64ce2f, type: 2}
     - target: {fileID: 919132149155446097, guid: 68db1d9b45c7639459468192562b70ac, type: 3}
       propertyPath: m_Name
       value: Toy Wood Train Small
@@ -792,6 +796,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 25.154
       objectReference: {fileID: 0}
+    - target: {fileID: -7511558181221131132, guid: fb6888e4793f37649b34156823a243ec, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: 2100000, guid: 4872bd979375030478cac4947d2d4fa4, type: 2}
     - target: {fileID: 919132149155446097, guid: fb6888e4793f37649b34156823a243ec, type: 3}
       propertyPath: m_Name
       value: Toy rocket
