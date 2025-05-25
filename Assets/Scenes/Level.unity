@@ -13514,9 +13514,61 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 19795987548199208, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 19795987548199208, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 19795987548199208, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 19795987548199208, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 1.7250035
+      objectReference: {fileID: 0}
+    - target: {fileID: 167692977725565822, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_Icon
+      value: 
+      objectReference: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+    - target: {fileID: 548101575355588784, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 548101575355588784, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 548101575355588784, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 548101575355588784, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.351
+      objectReference: {fileID: 0}
+    - target: {fileID: 548101575355588784, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2160562120710032872, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
       propertyPath: m_Name
       value: Ball Set up
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563964011953419258, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563964011953419258, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4563964011953419258, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8231191852137784560, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
       propertyPath: m_LocalPosition.x
