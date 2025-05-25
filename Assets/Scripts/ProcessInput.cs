@@ -16,8 +16,6 @@ public class ProcessInput : MonoBehaviour
     [SerializeField]
     public Rigidbody Ball;
 
-
-
     bool charge;
     float chargeMult = 0.5f;
     float minCharge = 0.1f;
@@ -25,6 +23,7 @@ public class ProcessInput : MonoBehaviour
 
     [SerializeField]
     float launchForce;
+    float launchTime;
 
     [SerializeField]
     float _minVelocity = 0.1f;
@@ -72,7 +71,16 @@ public class ProcessInput : MonoBehaviour
         }
     }
 
-    float launchTime;
+    public void OnRightClick(InputValue input)
+    {
+        if (charge && input.isPressed)
+        {
+            charge = false;
+            onChargeCancelled?.Invoke();
+            chargeTime = 0;
+        }
+    }
+
     private void Update()
     {
         if (ShotTaken == false)
@@ -104,7 +112,8 @@ public class ProcessInput : MonoBehaviour
                     ShotTaken = true;
                 }
                 else onChargeCancelled?.Invoke();
-                    chargeTime = 0;
+
+                chargeTime = 0;
             }
         }
         else
