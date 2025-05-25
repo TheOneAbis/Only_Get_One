@@ -19,6 +19,7 @@ public class ProcessInput : MonoBehaviour
     public DecalProjector Ripple;
 
     bool charge;
+    bool chargeup;
     float chargeMult = 0.5f;
     float minCharge = 0.1f;
     float chargeTime;
@@ -105,8 +106,21 @@ public class ProcessInput : MonoBehaviour
                 _forceArrow.transform.position = Ball.transform.position+ Vector3.up*0.5f;
                 _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
                 _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
-                chargeTime += Time.deltaTime * chargeMult;
-                chargeTime = Mathf.Min(chargeTime, 1);
+                if(chargeup)
+                    chargeTime += Time.deltaTime * chargeMult;
+                else
+                    chargeTime -= Time.deltaTime * chargeMult;
+                if (chargeTime > 1)
+                {
+                    chargeTime = 1;
+                    chargeup = false;
+                }
+                if(chargeTime < 0)
+                {
+                    chargeTime = 0;
+                    chargeup = true;
+                }
+                //chargeTime = Mathf.Min(chargeTime, 1);
             }
             else
             {
@@ -123,6 +137,7 @@ public class ProcessInput : MonoBehaviour
                 else onChargeCancelled?.Invoke();
 
                 chargeTime = 0;
+                chargeup = true;
             }
             Ripple.gameObject.SetActive(false);
         }
