@@ -1771,13 +1771,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6360724446202181973, guid: 669251b545316f14fa0ccd9d67852538, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6389492013938739075, guid: 669251b545316f14fa0ccd9d67852538, type: 3}
       propertyPath: m_text
       value: 'Left Click To Restart
 
-        (don''t tell your mom)
+        (don''t tell your parents)
 
 '
       objectReference: {fileID: 0}
