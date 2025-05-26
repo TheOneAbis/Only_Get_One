@@ -7,6 +7,10 @@ public class GameComplete : MonoBehaviour
     string _endScene = "End";
     private void OnTriggerEnter(Collider other)
     {
+        Invoke("LoadScore", 3f);
+    }
+    private void LoadScore()
+    {
         SceneManager.LoadScene(_endScene);
     }
 }
