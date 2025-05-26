@@ -18,10 +18,6 @@ public class Score : MonoBehaviour
     void Start()
     {
         StartCoroutine(Display());
-        //Data.Points = 100;
-        //Data.Goals.Add("test1");
-        //Data.Goals.Add("test2");
-        //Data.Goals.Add("test3");
     }
 
     IEnumerator Display()
@@ -33,26 +29,33 @@ public class Score : MonoBehaviour
         {
             _scoreText.text = "Coins Found: " + i;
             //scoreDelay *= 0.9f;
-            yield return new WaitForSeconds(scoreDelay * Mathf.Pow(i / (float)Data.Points, 10)); 
+            if (i > 0)
+            {
+
+                yield return new WaitForSeconds(scoreDelay * Mathf.Pow(i / (float)Data.Points, 10));
+            }
         }
 
         yield return new WaitForSeconds(2.3f);
 
         float goalDelay = 1.4f;
         _goalsText.text = "Checkpoints: ";
-        for (int i = 0; i < _allGoals.Count; i++)
+        if (_allGoals.Count > 0)
         {
-            _goalsText.text += '\n';
-            if (Data.Goals.Contains(_allGoals[i]))
+            for (int i = 0; i < _allGoals.Count; i++)
             {
-                _goalsText.text += "<color=green> " + _allGoals[i];
+                _goalsText.text += '\n';
+                if (Data.Goals.Contains(_allGoals[i]))
+                {
+                    _goalsText.text += "<color=green> " + _allGoals[i];
+                }
+                else
+                {
+                    _goalsText.text += "<color=red> " + _allGoals[i];
+                }
+                //goalDelay *= 0.65f;
+                yield return new WaitForSeconds(goalDelay);
             }
-            else
-            {
-                _goalsText.text += "<color=red> " + _allGoals[i];
-            }
-            //goalDelay *= 0.65f;
-            yield return new WaitForSeconds(goalDelay);
         }
     }
     // Update is called once per frame
