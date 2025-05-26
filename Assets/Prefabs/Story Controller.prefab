@@ -155,7 +155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3625964773124394402
 RectTransform:
   m_ObjectHideFlags: 0
@@ -405,7 +405,7 @@ MonoBehaviour:
   - "In my mind, that marble could conquer anything \u2014 it could save the world."
   - I told myself, "you only get one."
   - "Now I\u2019ve long since moved out, but I still often think back to those moments."
-  - You ALSO only get one childhood.
+  - You also only get one CHILDHOOD.
   UICanvas: {fileID: 4116294957712974772}
   fadeTime: 2
   holdTime: 1
