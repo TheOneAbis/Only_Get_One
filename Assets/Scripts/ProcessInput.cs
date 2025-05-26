@@ -72,6 +72,7 @@ public class ProcessInput : MonoBehaviour
     }
     public void OnRestart(InputValue input)
     {
+        Time.timeScale = 1f;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
     public void OnLook(InputValue input)

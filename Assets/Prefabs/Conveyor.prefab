@@ -1,0 +1,1713 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4624970973194034400
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9038005651658283196}
+  m_Layer: 0
+  m_Name: Conveyor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9038005651658283196
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4624970973194034400}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 965.2828, y: 562.83264, z: -11.09356}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 8887812919281735473}
+  - {fileID: 3181361077615720827}
+  - {fileID: 3902565021960178503}
+  - {fileID: 9163039969488332715}
+  - {fileID: 657901521369285627}
+  - {fileID: 746314739469836107}
+  - {fileID: 4455359225059859103}
+  - {fileID: 5987004306083148869}
+  - {fileID: 3104591791491848783}
+  - {fileID: 7854957834576194536}
+  - {fileID: 8047302331259628372}
+  - {fileID: 2209672979015468050}
+  - {fileID: 6926755740906282535}
+  - {fileID: 5490021413931649082}
+  - {fileID: 770671692869157148}
+  - {fileID: 1313888444243040616}
+  - {fileID: 4217557378581901731}
+  - {fileID: 4671657748812201546}
+  - {fileID: 319800725360479693}
+  - {fileID: 4945360641932862052}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &246764246165302907
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (6)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 952813869160515252}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &4455359225059859103 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 246764246165302907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6277248815348676381 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 246764246165302907}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &952813869160515252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6277248815348676381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 6
+--- !u!1001 &306233012049364295
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (16)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5606120092637907578}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &4217557378581901731 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 306233012049364295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5786596660437654561 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 306233012049364295}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5606120092637907578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5786596660437654561}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 16
+--- !u!1001 &617135465397354403
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3105026600164507076}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &3902565021960178503 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 617135465397354403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6692748323329648325 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 617135465397354403}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3105026600164507076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6692748323329648325}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 2
+--- !u!1001 &1341584854525480351
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2186586960007141288}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &3181361077615720827 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 1341584854525480351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5111495543752971513 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 1341584854525480351}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2186586960007141288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5111495543752971513}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 1
+--- !u!1001 &1562057011073904299
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (8)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2444155707631004603}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &3104591791491848783 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 1562057011073904299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4745774618262747085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 1562057011073904299}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2444155707631004603
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4745774618262747085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 8
+--- !u!1001 &2311022291493843190
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (11)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8794197402438665340}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &2209672979015468050 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 2311022291493843190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8386701738594642320 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 2311022291493843190}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8794197402438665340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8386701738594642320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 11
+--- !u!1001 &3207668830752484748
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (15)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3067926763099325663}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &1313888444243040616 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 3207668830752484748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8715036484655281386 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 3207668830752484748}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3067926763099325663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8715036484655281386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 15
+--- !u!1001 &3749750850703767032
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (14)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 499524580486272803}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &770671692869157148 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 3749750850703767032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6951342052407831710 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 3749750850703767032}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &499524580486272803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6951342052407831710}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 14
+--- !u!1001 &3810962378371902383
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (5)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4970900475209802005}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &746314739469836107 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 3810962378371902383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &6958809483864077001 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 3810962378371902383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4970900475209802005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6958809483864077001}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 5
+--- !u!1001 &4006346219455985439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (4)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 665733767704835192}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &657901521369285627 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 4006346219455985439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7199158918311669369 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 4006346219455985439}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &665733767704835192
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7199158918311669369}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 4
+--- !u!1001 &4235664358656899369
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (18)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2311331704038620152}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!4 &319800725360479693 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 4235664358656899369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &7978672126174208079 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 4235664358656899369}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2311331704038620152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7978672126174208079}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 18
+--- !u!1001 &4724728010321564495
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (3)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 787448806363334440}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &1576384509361015337 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 4724728010321564495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &787448806363334440
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1576384509361015337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 3
+--- !u!4 &9163039969488332715 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 4724728010321564495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5039503351330022357
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2672420450598988221}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &1269456357019417267 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 5039503351330022357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2672420450598988221
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1269456357019417267}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 0
+--- !u!4 &8887812919281735473 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 5039503351330022357}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &5842841688626159536
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (10)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4605763760268426185}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &388465994056435414 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 5842841688626159536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4605763760268426185
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 388465994056435414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 10
+--- !u!4 &8047302331259628372 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 5842841688626159536}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6033233409966677772
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (9)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 9190248695408715193}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &561740071443580522 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 6033233409966677772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &9190248695408715193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 561740071443580522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 9
+--- !u!4 &7854957834576194536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 6033233409966677772}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &6816467415318997699
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (12)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5001478133898695010}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &786193366507811749 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 6816467415318997699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &5001478133898695010
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 786193366507811749}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 12
+--- !u!4 &6926755740906282535 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 6816467415318997699}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &7903307071495405729
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (7)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7405616097693603947}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &4170269089160976839 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 7903307071495405729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &7405616097693603947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4170269089160976839}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 7
+--- !u!4 &5987004306083148869 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 7903307071495405729}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8252927926588144862
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (13)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8096472101383100711}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &2808452268679341496 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 8252927926588144862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8096472101383100711
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2808452268679341496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 13
+--- !u!4 &5490021413931649082 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 8252927926588144862}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &8798133814759773824
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (19)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 437463795905182445}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &3344110032306409446 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 8798133814759773824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &437463795905182445
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3344110032306409446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 19
+--- !u!4 &4945360641932862052 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 8798133814759773824}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &9110004290971634350
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 9038005651658283196}
+    m_Modifications:
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -9.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.992
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      propertyPath: m_Name
+      value: Conveyor Belt flap (17)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 3796893628028011065}
+  m_SourcePrefab: {fileID: 100100000, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+--- !u!1 &3034536569043964872 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6084902185008257382, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 9110004290971634350}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &3796893628028011065
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3034536569043964872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d0a5638f6ada674dbc63e22ba2d0d49, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeOffset: 17
+--- !u!4 &4671657748812201546 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4519418689174435044, guid: eecaae42be5d91f48a35be652dd479b1, type: 3}
+  m_PrefabInstance: {fileID: 9110004290971634350}
+  m_PrefabAsset: {fileID: 0}

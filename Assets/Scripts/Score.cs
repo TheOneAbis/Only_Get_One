@@ -18,10 +18,10 @@ public class Score : MonoBehaviour
     void Start()
     {
         StartCoroutine(Display());
-        Data.Points = 100;
-        Data.Goals.Add("test1");
-        Data.Goals.Add("test2");
-        Data.Goals.Add("test3");
+        //Data.Points = 100;
+        //Data.Goals.Add("test1");
+        //Data.Goals.Add("test2");
+        //Data.Goals.Add("test3");
     }
 
     IEnumerator Display()
@@ -29,11 +29,11 @@ public class Score : MonoBehaviour
         yield return new WaitForSeconds(0.75f);
 
         float scoreDelay = 0.5f;
-        for (int i = 0; i < Data.Points; i++)
+        for (int i = 0; i <= Data.Points; i++)
         {
             _scoreText.text = "Coins Found: " + i;
             //scoreDelay *= 0.9f;
-            yield return new WaitForSeconds(scoreDelay * (Mathf.Pow(1.0f - (float)i/ (float)Data.Points, 4))); 
+            yield return new WaitForSeconds(scoreDelay * Mathf.Pow(i / (float)Data.Points, 10)); 
         }
 
         yield return new WaitForSeconds(2.3f);
