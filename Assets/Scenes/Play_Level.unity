@@ -2259,7 +2259,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136124387249616653, guid: 0090f4239e69bbf478fc5a54943c3460, type: 3}
       propertyPath: m_Name
-      value: Goal 5
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -13252,7 +13252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136124387249616653, guid: 0090f4239e69bbf478fc5a54943c3460, type: 3}
       propertyPath: m_Name
-      value: Goal 3
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -17609,7 +17609,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136124387249616653, guid: 0090f4239e69bbf478fc5a54943c3460, type: 3}
       propertyPath: m_Name
-      value: Goal 2
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -31438,7 +31438,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136124387249616653, guid: 0090f4239e69bbf478fc5a54943c3460, type: 3}
       propertyPath: m_Name
-      value: Goal 4
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -39172,7 +39172,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: e13469c73bfac3c41833da8ce2586188, type: 3}
       propertyPath: m_LocalScale.x
-      value: 249.90292
+      value: 224.38783
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e13469c73bfac3c41833da8ce2586188, type: 3}
       propertyPath: m_LocalScale.y
@@ -39184,7 +39184,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e13469c73bfac3c41833da8ce2586188, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -83.8666
+      value: -83.6265
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e13469c73bfac3c41833da8ce2586188, type: 3}
       propertyPath: m_LocalPosition.y
@@ -39192,7 +39192,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e13469c73bfac3c41833da8ce2586188, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -13.9455
+      value: -14.5368
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e13469c73bfac3c41833da8ce2586188, type: 3}
       propertyPath: m_LocalRotation.w
@@ -44525,7 +44525,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136124387249616653, guid: 0090f4239e69bbf478fc5a54943c3460, type: 3}
       propertyPath: m_Name
-      value: Goal 1
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -45199,6 +45199,22 @@ PrefabInstance:
     - target: {fileID: 6194480330496697874, guid: ec7732f2ec4581c4ebfb8cae2e59b837, type: 3}
       propertyPath: m_Name
       value: Story Controller
+      objectReference: {fileID: 0}
+    - target: {fileID: 7583319442266179222, guid: ec7732f2ec4581c4ebfb8cae2e59b837, type: 3}
+      propertyPath: 'storyString.Array.data[7]'
+      value: You also only get one CHILDHOOD.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8142181068771303978, guid: ec7732f2ec4581c4ebfb8cae2e59b837, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+    - target: {fileID: 8142181068771303978, guid: ec7732f2ec4581c4ebfb8cae2e59b837, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: 1256629578151399848, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+    - target: {fileID: 8142181068771303978, guid: ec7732f2ec4581c4ebfb8cae2e59b837, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
