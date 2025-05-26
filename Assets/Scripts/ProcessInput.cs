@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -65,6 +66,9 @@ public class ProcessInput : MonoBehaviour
     public void OnPause(InputValue input)
     {
         _pauseMenu.SetActive(!_pauseMenu.activeSelf);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = _pauseMenu.activeSelf;
+        Time.timeScale = _pauseMenu.activeSelf ? 0 : 1;
     }
     public void OnRestart(InputValue input)
     {
@@ -72,6 +76,8 @@ public class ProcessInput : MonoBehaviour
     }
     public void OnLook(InputValue input)
     {
+        if (_pauseMenu.activeSelf) return;
+
         Vector2 mouseInput = input.Get<Vector2>() / 4f;
         //Debug.Log("Mouse move input: "+ mouseInput);
         _cameraController.UpdatePosition(mouseInput);
@@ -79,6 +85,8 @@ public class ProcessInput : MonoBehaviour
 
     public void OnLeftClick(InputValue input)
     {
+        if (_pauseMenu.activeSelf) return;
+
         if (!charge && input.isPressed)
         {
             onChargeBegin?.Invoke(chargeMult);
@@ -97,6 +105,8 @@ public class ProcessInput : MonoBehaviour
 
     public void OnRightClick(InputValue input)
     {
+        if (_pauseMenu.activeSelf) return;
+
         if (charge && input.isPressed)
         {
             charge = false;
