@@ -18,10 +18,10 @@ public class Score : MonoBehaviour
     void Start()
     {
         StartCoroutine(Display());
-        Data.Points = 100;
-        Data.Goals.Add("test1");
-        Data.Goals.Add("test2");
-        Data.Goals.Add("test3");
+        //Data.Points = 100;
+        //Data.Goals.Add("test1");
+        //Data.Goals.Add("test2");
+        //Data.Goals.Add("test3");
     }
 
     IEnumerator Display()
