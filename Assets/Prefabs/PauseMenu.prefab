@@ -35,7 +35,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -50}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 892, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1823345609517940948
 CanvasRenderer:
@@ -65,9 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pause
-
-'
+  m_text: Let me help set the table
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
   m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
@@ -1142,7 +1140,9 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Main Menu
+  m_text: 'Main Menu
+
+'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
   m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
@@ -1284,7 +1284,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 0, y: -166.40002}
-  m_SizeDelta: {x: 400, y: 100}
+  m_SizeDelta: {x: 789.7, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4935118686453734983
 CanvasRenderer:
@@ -1314,9 +1314,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pause
-
-'
+  m_text: Let me help set the table
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
   m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
