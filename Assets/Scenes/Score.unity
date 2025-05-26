@@ -1386,10 +1386,12 @@ MonoBehaviour:
   _scoreText: {fileID: 1129719820}
   _goalsText: {fileID: 2084182259}
   _allGoals:
-  - test1
-  - test2
-  - test3
-  - test4
+  - The Chute
+  - The Gate
+  - The Curve
+  - The Funnel
+  - The Dungeon
+  - The Tower
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
