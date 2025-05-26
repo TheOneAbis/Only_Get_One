@@ -9629,7 +9629,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7136124387249616653, guid: 0090f4239e69bbf478fc5a54943c3460, type: 3}
       propertyPath: m_Name
-      value: Goal Trigger (5)
+      value: Goal 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -20962,7 +20962,6 @@ Transform:
   - {fileID: 1240762408}
   - {fileID: 1281314592}
   - {fileID: 1387500339}
-  - {fileID: 1173710598}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1007533580
