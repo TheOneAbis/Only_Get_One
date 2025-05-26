@@ -35917,18 +35917,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level Basics
       objectReference: {fileID: 0}
-    - target: {fileID: 7970651386327643865, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -117.39
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970651386327643865, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -36.36
-      objectReference: {fileID: 0}
-    - target: {fileID: 7970651386327643865, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -11.55
-      objectReference: {fileID: 0}
     - target: {fileID: 8231191852137784560, guid: e339cda9a8865184099d2cf7045a5a5a, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1115.9368
