@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
@@ -37,6 +38,7 @@ public class ProcessInput : MonoBehaviour
     private Vector3 _arrowMaxScale = new Vector3(1,1,2);
 
     public static UnityEvent<float> onChargeBegin = new();
+    public static UnityEvent<float> onChargeUpdated = new();
     public static UnityEvent onChargeCancelled = new();
     public static UnityEvent onChargeRelease = new();
 
@@ -64,6 +66,9 @@ public class ProcessInput : MonoBehaviour
     public void OnPause(InputValue input)
     {
         _pauseMenu.SetActive(!_pauseMenu.activeSelf);
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = _pauseMenu.activeSelf;
+        Time.timeScale = _pauseMenu.activeSelf ? 0 : 1;
     }
     public void OnRestart(InputValue input)
     {
@@ -71,6 +76,8 @@ public class ProcessInput : MonoBehaviour
     }
     public void OnLook(InputValue input)
     {
+        if (_pauseMenu.activeSelf) return;
+
         Vector2 mouseInput = input.Get<Vector2>() / 4f;
         //Debug.Log("Mouse move input: "+ mouseInput);
         _cameraController.UpdatePosition(mouseInput);
@@ -78,6 +85,8 @@ public class ProcessInput : MonoBehaviour
 
     public void OnLeftClick(InputValue input)
     {
+        if (_pauseMenu.activeSelf) return;
+
         if (!charge && input.isPressed)
         {
             onChargeBegin?.Invoke(chargeMult);
@@ -96,6 +105,8 @@ public class ProcessInput : MonoBehaviour
 
     public void OnRightClick(InputValue input)
     {
+        if (_pauseMenu.activeSelf) return;
+
         if (charge && input.isPressed)
         {
             charge = false;
@@ -122,10 +133,7 @@ public class ProcessInput : MonoBehaviour
                 _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
                 _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
                 targetFov= Mathf.Lerp(startingFOV, endFOV, chargeTime);
-                if(chargeup)
-                    chargeTime += Time.deltaTime * chargeMult;
-                else
-                    chargeTime -= Time.deltaTime * chargeMult;
+                chargeTime += Time.deltaTime * chargeMult * (chargeup ? 1f : -1f);
                 if (chargeTime > 1)
                 {
                     chargeTime = 1;
@@ -137,6 +145,7 @@ public class ProcessInput : MonoBehaviour
                     chargeup = true;
                 }
                 //chargeTime = Mathf.Min(chargeTime, 1);
+                onChargeUpdated?.Invoke(chargeTime);
             }
             else
             {
@@ -179,5 +188,4 @@ public class ProcessInput : MonoBehaviour
 
         Camera.main.fieldOfView = Mathf.SmoothDamp(Camera.main.fieldOfView, targetFov, ref fovVel, 0.2f);
     }
-    
 }
