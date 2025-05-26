@@ -68,8 +68,8 @@ MonoBehaviour:
   m_text: When I was a child, my parents would always call my name from the bottom
     of the stairs before dinner.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
-  m_sharedMaterial: {fileID: 1256629578151399848, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 285624772a566ce43970e83f6b4b828e, type: 2}
+  m_sharedMaterial: {fileID: 2106760289209246141, guid: 285624772a566ce43970e83f6b4b828e, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -93,8 +93,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
