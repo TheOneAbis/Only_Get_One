@@ -12,18 +12,22 @@ public class TextControl : MonoBehaviour
     private List<string> storyString;
 
     [SerializeField]
+    private GameObject UICanvas;
+
+    [SerializeField]
     private float fadeTime = 1.5f;
 
     [SerializeField]
     private float holdTime = 2f;
 
-    void Start()
+    private void OnTriggerEnter(Collider other)
     {
         StartStory();
     }
 
     public void StartStory()
     {
+        UICanvas.SetActive(true);
         StartCoroutine(RunStory());
     }
 
