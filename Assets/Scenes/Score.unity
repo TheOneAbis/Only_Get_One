@@ -246,7 +246,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 1, y: -97}
-  m_SizeDelta: {x: 300, y: 100}
+  m_SizeDelta: {x: 2133.4, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &97808878
 MonoBehaviour:
@@ -268,12 +268,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Results
-
-'
+  m_text: "Hurry UP! Your food is getting cold... \n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
-  m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+  m_sharedMaterial: {fileID: 1256629578151399848, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -690,7 +688,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -308, y: 159}
-  m_SizeDelta: {x: 300, y: 216.3}
+  m_SizeDelta: {x: 429.9, y: 216.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1129719819
 CanvasRenderer:
@@ -722,8 +720,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Coins Found:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
-  m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+  m_sharedMaterial: {fileID: 1256629578151399848, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -920,19 +918,17 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Try Again?
-
-'
+  m_text: One last game...
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
-  m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+  m_sharedMaterial: {fileID: 1256629578151399848, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -949,8 +945,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 64
-  m_fontSizeBase: 64
+  m_fontSize: 50
+  m_fontSizeBase: 50
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -1105,8 +1101,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -790, y: 229}
-  m_SizeDelta: {x: 300, y: 120}
+  m_AnchoredPosition: {x: -958.3, y: 179.4}
+  m_SizeDelta: {x: 399.1, y: 120}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1978854590
 MonoBehaviour:
@@ -1161,7 +1157,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: Level
+          m_StringArgument: Play_Level
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1978854591
@@ -1184,7 +1180,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 1736099613, guid: b220dbbab6e6d634b930247125b0ed65, type: 3}
+  m_Sprite: {fileID: -942074761, guid: b220dbbab6e6d634b930247125b0ed65, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1242,8 +1238,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 'Checkpoints:'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
-  m_sharedMaterial: {fileID: -4518909489598634681, guid: 109e2dcde457ddd46870bcbc4dafe62f, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
+  m_sharedMaterial: {fileID: 1256629578151399848, guid: e1348982a662ac94caccfc8fa9e5a21f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1336,7 +1332,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 318, y: -33}
-  m_SizeDelta: {x: 300, y: 600}
+  m_SizeDelta: {x: 495.1, y: 600}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2104580681
 GameObject:
