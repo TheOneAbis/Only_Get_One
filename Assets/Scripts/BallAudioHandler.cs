@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BallAudio : MonoBehaviour
+public class BallAudioHandler : MonoBehaviour
 {
     AudioSource rollAudio;
     AudioSource bounceAudio;
