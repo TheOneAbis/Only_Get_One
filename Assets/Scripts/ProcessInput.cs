@@ -1,21 +1,14 @@
-using JetBrains.Annotations;
-using UnityEditor;
 using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering.Universal;
 using UnityEngine.SceneManagement;
-using UnityEngine.Windows;
 
 public class ProcessInput : MonoBehaviour
 {
-    [SerializeField]
-    private GameObject _pauseMenu;
-    [SerializeField]
-    private GameObject _failMenu;
-    [SerializeField]
-    private CameraController _cameraController;
-    [SerializeField]
+    [SerializeField] GameObject _pauseMenu;
+    [SerializeField] GameObject _failPrompt;
+    [SerializeField] CameraController _cameraController;
     public Rigidbody Ball;
     public DecalProjector Ripple;
 
@@ -25,17 +18,15 @@ public class ProcessInput : MonoBehaviour
     float minCharge = 0.1f;
     float chargeTime;
 
-    [SerializeField]
-    float launchForce;
+    [SerializeField] float launchForce;
     float launchTime;
 
-    [SerializeField]
-    float _minVelocity = 0.1f;
-    public bool ShotTaken = false;
-    [SerializeField]
-    private GameObject _forceArrow;
-    [SerializeField]
-    private Vector3 _arrowMaxScale = new Vector3(1,1,2);
+    [SerializeField] float _minVelocity = 0.1f;
+    [HideInInspector] public bool ShotTaken = false;
+    [SerializeField] GameObject _forceArrow;
+ 
+    [SerializeField] float arrowMaxScaleMult = 2f;
+    float arrowMinScale;
 
     public static UnityEvent<float> onChargeBegin = new();
     public static UnityEvent<float> onChargeUpdated = new();
@@ -45,6 +36,8 @@ public class ProcessInput : MonoBehaviour
     public float startingFOV = 60;
     public float endFOV= 50;
     public float speedFOV = 90;
+    float fovVel;
+
     private void OnEnable()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -57,11 +50,9 @@ public class ProcessInput : MonoBehaviour
     }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
     void Start()
     {
-        Ripple.transform.position = Ball.transform.position - new Vector3(0, 0.9f, 0);
-        Ripple.gameObject.SetActive(false);
+        arrowMinScale = _forceArrow.transform.localScale.z;
     }
     public void OnPause(InputValue input)
     {
@@ -80,7 +71,6 @@ public class ProcessInput : MonoBehaviour
         if (_pauseMenu.activeSelf) return;
 
         Vector2 mouseInput = input.Get<Vector2>() / 4f;
-        //Debug.Log("Mouse move input: "+ mouseInput);
         _cameraController.UpdatePosition(mouseInput);
     }
 
@@ -88,20 +78,17 @@ public class ProcessInput : MonoBehaviour
     {
         if (_pauseMenu.activeSelf) return;
 
-        if (!charge && input.isPressed)
-        {
-            onChargeBegin?.Invoke(chargeMult);
-        }
-
-        charge = input.isPressed;
-        string buttonState = charge ? "Pressed" : "Released";
-        Debug.Log("Left Click " + buttonState);
-       
-        charge = input.isPressed;
         if (ShotTaken)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+            return;
         }
+
+        if (!charge && input.isPressed)
+            onChargeBegin?.Invoke(chargeMult);
+
+        charge = input.isPressed;
+        //Debug.Log("Left Click " + charge);
     }
 
     public void OnRightClick(InputValue input)
@@ -115,25 +102,28 @@ public class ProcessInput : MonoBehaviour
             chargeTime = 0;
         }
     }
-    float fovVel;
+   
     private void Update()
     {
         float targetFov = 60;
-        Ripple.transform.position = Ball.transform.position - new Vector3(0, 0.9f, 0);
         if (ShotTaken == false)
         {
-            _failMenu.SetActive(false);
+            _forceArrow.SetActive(charge);
 
             Vector3 dir = (Camera.main.transform.position + Camera.main.transform.forward *
-            (Mathf.Abs(_cameraController.GetComponent<CameraController>().offsetDistance) * 2.25f) - Ball.transform.position).normalized;
-
+                (Mathf.Abs(_cameraController.GetComponent<CameraController>().offsetDistance) * 2.25f) - Ball.transform.position).normalized;
+            
             if (charge)
             {
-                _forceArrow.SetActive(true);
-                _forceArrow.transform.position = Ball.transform.position+ Vector3.up*0.5f;
                 _forceArrow.transform.rotation = Quaternion.LookRotation(dir, Vector3.up);
-                _forceArrow.transform.localScale = Vector3.Lerp(Vector3.one,_arrowMaxScale,chargeTime);
-                targetFov= Mathf.Lerp(startingFOV, endFOV, chargeTime);
+
+                Vector3 newScale = _forceArrow.transform.localScale;
+                newScale.z = Mathf.Lerp(arrowMinScale, arrowMinScale * arrowMaxScaleMult, chargeTime);
+                _forceArrow.transform.localScale = newScale;
+                Debug.Log(newScale);
+
+                targetFov = Mathf.Lerp(startingFOV, endFOV, chargeTime);
+
                 chargeTime += Time.deltaTime * chargeMult * (chargeup ? 1f : -1f);
                 if (chargeTime > 1)
                 {
@@ -145,12 +135,10 @@ public class ProcessInput : MonoBehaviour
                     chargeTime = 0;
                     chargeup = true;
                 }
-                //chargeTime = Mathf.Min(chargeTime, 1);
                 onChargeUpdated?.Invoke(chargeTime);
             }
             else
             {
-                _forceArrow.SetActive(false);
                 if (chargeTime > minCharge)
                 {
                     launchTime = Time.time;
@@ -165,7 +153,6 @@ public class ProcessInput : MonoBehaviour
                 chargeTime = 0;
                 chargeup = true;
             }
-            Ripple.gameObject.SetActive(false);
         }
         else
         {
@@ -173,18 +160,10 @@ public class ProcessInput : MonoBehaviour
             float maxSpeed = 20;
             
             targetFov = Mathf.Lerp(startingFOV, speedFOV, speed / maxSpeed);
-            if (Ball.linearVelocity.magnitude <= _minVelocity&& Time.time - launchTime>3.0f)
-            {
-                _failMenu.SetActive(true);
-            }
-            if (Ball.GetComponent<Rigidbody>().linearVelocity.sqrMagnitude > 0.1)
-            {
-                Ripple.gameObject.SetActive(false);
-            }
-            else
-            {
-                Ripple.gameObject.SetActive(true);
-            }
+            if (Ball.linearVelocity.magnitude <= _minVelocity && Time.time - launchTime > 3.0f)
+                _failPrompt.SetActive(true);
+
+            Ripple.gameObject.SetActive(Ball.GetComponent<Rigidbody>().linearVelocity.sqrMagnitude <= 0.1);
         }
 
         Camera.main.fieldOfView = Mathf.SmoothDamp(Camera.main.fieldOfView, targetFov, ref fovVel, 0.2f);
